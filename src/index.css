@@ -1,13 +1,52 @@
 body {
+  background-color: lightgrey;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.contacts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  background-color: lightgrey;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(46, 43, 43, 0.2);
+  margin: 0 20px 20px 0;
+  padding: 10px;
+}
+
+.contact-card > img {
+  width: 90%;
+  margin: 0 0 15px 0;
+  padding: 0;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.contact-card > h3 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.info-group {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.info-group > img {
+  width: 10px;
+  margin-right: 5px;
+}
+
+.info-group > p {
+  margin: 0;
 }
